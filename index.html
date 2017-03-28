@@ -1,0 +1,121 @@
+<!--
+ * @author Manato0x2cc
+ * @version 1.0.0
+ *
+ *  __  __             ___  _   _
+ * |  \/  | __ _  ___ / _ \| \ | |
+ * | |\/| |/ _` |/ __| | | |  \| |
+ * | |  | | (_| | (__| |_| | |\  |
+ * |_|  |_|\__,_|\___|\___/|_| \_|
+ *
+ * MacON, the software which can paste your image to the coolest mac images.
+ *
+ * Copyright (c) 2017 Manato0x2cc
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Manato0x2cc">
+	<title>MacON!</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
+	<link rel="fluid-icon" href="icon.png" title="MacON">
+</head>
+
+<body>
+	<!--<a href="https://github.com/manato0x2cc"><img style="position: fixed; top: 0; right: 0; border: 0; z-index:100;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
+
+	<div class="container" style="position:relative;">
+		<div class="row" id="welcome">
+			<div class="col-md-12 col-xs-12 text-center">
+				<img src="image/logo.png" style="max-width:100%; max-height: 70%;"></img>
+				<h2>MacON! Paste your image to the coolest Mac.</h2>
+				<button class="btn btn-primary" id="create-button" style="width: 80%;">Create!</button>
+			</div>
+		</div>
+
+		<div class="row text-center" id="select-mac-theme">
+			<p><h2>Select theme</h2>Click image you want paste to.</p>
+			<div class="col-xs-offset-0 col-xs-12 col-md-offset-2 col-md-8">
+				<div id="Glide" class="glide">
+
+			    <div class="glide__arrows">
+			        <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+			        <button class="glide__arrow next" data-glide-dir=">">next</button>
+			    </div>
+
+			    <div class="glide__wrapper">
+			        <ul class="glide__track">
+								<li class="glide__slide"><img src="image/mac/small/mac1.png"  class="mac-image" id="mac1"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac2.png"  class="mac-image" id="mac2"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac3.png"  class="mac-image" id="mac3"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac4.png"  class="mac-image" id="mac4"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac5.png"  class="mac-image" id="mac5"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac6.png"  class="mac-image" id="mac6"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac7.png"  class="mac-image" id="mac7"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac8.png"  class="mac-image" id="mac8"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac9.png"  class="mac-image" id="mac9"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac10.png" class="mac-image" id="mac10"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac11.png" class="mac-image" id="mac11"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac12.png" class="mac-image" id="mac12"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac13.png" class="mac-image" id="mac13"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac14.png" class="mac-image" id="mac14"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac15.png" class="mac-image" id="mac15"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac16.png" class="mac-image" id="mac16"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac17.png" class="mac-image" id="mac17"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac18.png" class="mac-image" id="mac18"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac19.png" class="mac-image" id="mac19"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac20.png" class="mac-image" id="mac20"></img></li>
+								<li class="glide__slide"><img src="image/mac/small/mac21.png" class="mac-image" id="mac21"></img></li>
+			        </ul>
+			    </div>
+					<b>Select size</b>&nbsp;&nbsp;
+					<label><input type="radio" name="size" value="big" checked="checked">Big</label>&nbsp;&nbsp;
+					<label><input type="radio" name="size" value="medium">Medium</label>&nbsp;&nbsp;
+					<label><input type="radio" name="size" value="small">Small</label>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="upload-image">
+		</div>
+		<div class="row text-center" id="result-image">
+			<canvas id="canvas">Your browser no support Canvas</canvas>
+		</div>
+	</div>
+
+	<div id="now-loading">
+		<h2><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i><i id="msg">Now Loading...</i></h2>
+	</div>
+
+	<button id="fixed-button" class="btn btn-default btn-ghost"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</button>
+
+	<footer style="opacity: 1; background: white;">
+		<div class="container" style="position: absolute; bottom: 0px; left:0px; width:100%; opacity: 1; z-index:2; max-height: 10%;">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 text-center">
+					<p style="color: #ccc;"><a href="index.html">MacON!</a> 2017 Manato0x2cc. Images from <a href="http://jp.freepik.com/free-psd/_800763.htm">Freepik</a> and <a href="https://unsplash.com">Unsplash</a>.<a href="https://github.com/manato0x2cc/macon" class="btn btn-primary">View on GitHub</a></p></p>
+				<div>
+			</div>
+		</div>
+	</footer>
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/glide.js"></script>
+	<script src="js/macon-gl-matrix-min.js"></script>
+	<script src="js/mac_markers.js"></script>
+	<script src="js/ProjectiveTransformation.js"></script>
+	<script src="js/macon.js"></script>
+</body>
+</html>
